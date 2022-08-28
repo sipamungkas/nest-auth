@@ -38,7 +38,7 @@ export class AuthHelper {
   }
 
   //   validate User's password
-  public isPasswordvalid(password: string, userPassword: string): boolean {
+  public isPasswordValid(password: string, userPassword: string): boolean {
     return bcrypt.compareSync(password, userPassword);
   }
 
